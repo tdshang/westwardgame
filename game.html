@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Westward Expansion Adventure</title>
+    <script>
+        function startAdventure() {
+            var intro = "Welcome to the Westward Expansion Adventure!\n\n";
+            intro += "It's the early 19th century, and the United States is on the brink of monumental change. As a young person eager to make your mark, you're faced with decisions that could lead to fortune, fame, or hardship.\n\n";
+            intro += "Choose your path:\n1. Stay and Work the Land\n2. Head West";
+            var choice = prompt(intro);
+
+            switch(choice) {
+                case "1":
+                    stayAndWorkTheLand();
+                    break;
+                case "2":
+                    headWest();
+                    break;
+                default:
+                    alert("Please enter a valid choice (1 or 2).");
+                    startAdventure();
+                    break;
+            }
+        }
+
+        function stayAndWorkTheLand() {
+            var message = "You've chosen to stay and work the land. This path may not lead to adventure, but it holds its own challenges and opportunities.\n\n";
+            message += "Do you:\n1. Invest in Local Business\n2. Support Social Reforms";
+            var choice = prompt(message);
+
+            // Add logic for choices under staying and working the land
+            alert("You've completed the adventure! Reflect on how your decisions have shaped your community.");
+        }
+
+        function headWest() {
+            var message = "You're headed West, seeking new opportunities and adventures.\n\n";
+            message += "Where do you go?\n1. Take the Oregon Trail\n2. Explore Florida";
+            var choice = prompt(message);
+
+            // Add logic for choices under heading west
+            alert("You've completed the adventure! Reflect on your journey and its impact on American history.");
+        }
+
+        // Additional functions for further choices can be added here
+    </script>
+</head>
+<body onload="startAdventure();">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+</body>
+</html>
